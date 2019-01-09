@@ -28,7 +28,6 @@ int main(){
   double* matB = (double*)malloc(size_matB_cols * size_matAB_cols_rows * sizeof(double));
   double* matC = (double*)malloc(size_matA_rows * size_matB_cols * sizeof(double));
 
-
   for(matA_Index.row = 0; matA_Index.row < size_matA_rows; matA_Index.row++){
     for(matA_Index.col = 0; matA_Index.col < size_matAB_cols_rows; matA_Index.col++){
       printf("matA r=%d, c=%d > ", matA_Index.row, matA_Index.col);
@@ -53,7 +52,6 @@ int main(){
       matC[Get_Index(size_matB_cols, matA_Index.row, matB_Index.col)] = cell;
     }
   }
-
 
   for(matA_Index.row = 0; matA_Index.row < size_matA_rows; matA_Index.row++){
     for(matB_Index.col = 0; matB_Index.col < size_matB_cols; matB_Index.col++){
