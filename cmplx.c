@@ -9,6 +9,9 @@ struct complex sum(struct complex* z, int N){
   struct complex z_sum;
   int i;
 
+  z_sum.re = 0;
+  z_sum.im = 0;
+  
   for(i = 0; i < N; i++){
     z_sum.re += z[i].re;
     z_sum.im += z[i].im;
